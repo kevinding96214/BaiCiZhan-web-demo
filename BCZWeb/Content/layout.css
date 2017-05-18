@@ -1,0 +1,50 @@
+﻿html,body {
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    background:url('../Image/bg.jpg') no-repeat fixed;
+    background-size:cover;
+}
+.navbar-header button{
+    border:1px #fff solid;
+}
+.navbar-toggle span{
+    background-color:#fff;
+}
+.navbar-fixed-top{
+    padding-top:5px;
+}
+.nav a{
+    color:#fff;
+    font-size:20px;
+    font-family:FZYaoTi;
+    text-align:right;
+}
+footer{
+    color:#fff;
+    font-size:12px;
+}
+#downBox{
+    float:right;
+    display:none;
+    transition:all .8s;
+    -moz-transition:all .8s;
+    -webkit-transition:all .8s;
+}
+#downBox img{
+    width:100px;
+    margin:1px;
+}
+@media only screen and (max-width: 470px){
+    .nav a {
+        text-shadow:0 0 1px #000;
+    }
+    #login{
+        top:45%;
+        padding:0 5px 0 5px;
+    }
+    .log{
+        width:15px;
+    }
+}

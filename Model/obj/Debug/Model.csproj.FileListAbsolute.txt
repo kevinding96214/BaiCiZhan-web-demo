@@ -1,0 +1,5 @@
+E:\ClassProgram\BCZWeb\Model\bin\Debug\Model.dll
+E:\ClassProgram\BCZWeb\Model\bin\Debug\Model.pdb
+E:\ClassProgram\BCZWeb\Model\obj\Debug\Model.dll
+E:\ClassProgram\BCZWeb\Model\obj\Debug\Model.pdb
+E:\ClassProgram\BCZWeb\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

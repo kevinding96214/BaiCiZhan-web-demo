@@ -1,0 +1,9 @@
+E:\ClassProgram\BCZWeb\DAL\bin\Debug\DAL.dll
+E:\ClassProgram\BCZWeb\DAL\bin\Debug\DAL.pdb
+E:\ClassProgram\BCZWeb\DAL\bin\Debug\Helper.dll
+E:\ClassProgram\BCZWeb\DAL\bin\Debug\Model.dll
+E:\ClassProgram\BCZWeb\DAL\bin\Debug\Helper.pdb
+E:\ClassProgram\BCZWeb\DAL\bin\Debug\Model.pdb
+E:\ClassProgram\BCZWeb\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\ClassProgram\BCZWeb\DAL\obj\Debug\DAL.dll
+E:\ClassProgram\BCZWeb\DAL\obj\Debug\DAL.pdb

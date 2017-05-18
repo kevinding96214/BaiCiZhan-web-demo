@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3BC32CA7-B61D-4791-84A6-9A6FDC75EA81}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BCZWeb</RootNamespace>
+    <AssemblyName>BCZWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net46\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\admin.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Image\10_book_face.png" />
+    <Content Include="Image\11_book_face.png" />
+    <Content Include="Image\12_book_face.png" />
+    <Content Include="Image\1_book_face.png" />
+    <Content Include="Image\2_book_face.png" />
+    <Content Include="Image\3_book_face.png" />
+    <Content Include="Image\4_book_face.png" />
+    <Content Include="Image\5_book_face.png" />
+    <Content Include="Image\6_book_face.png" />
+    <Content Include="Image\7_book_face.png" />
+    <Content Include="Image\8_book_face.png" />
+    <Content Include="Image\9_book_face.png" />
+    <Content Include="Image\bcztv_20150811181323_重口小讲堂.png" />
+    <Content Include="Image\bcztv_20150829181607_开学季.png" />
+    <Content Include="Image\bcztv_20150829181744_cover－virgo.png" />
+    <Content Include="Image\bcztv_20150912151023_embarrassed knowledge－0818.png" />
+    <Content Include="Image\bcztv_20150916170445_看mv学单词.jpg" />
+    <Content Include="Image\bcztv_20150925160849_cover－一起过中秋.png" />
+    <Content Include="Image\bcztv_20150926142733_cover－易混词.jpg" />
+    <Content Include="Image\bcztv_20151106170614_封面11.png" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\index.css" />
+    <Content Include="Content\join.css" />
+    <Content Include="Content\layout.css" />
+    <Content Include="Image\android-d.png" />
+    <Content Include="Image\apple-d.png" />
+    <Content Include="Image\bcz-logo-new.png" />
+    <Content Include="Image\bg.jpg" />
+    <Content Include="Image\b_icon2.ico" />
+    <Content Include="Image\down1.jpg" />
+    <Content Include="Image\down2.jpg" />
+    <Content Include="Image\down3.jpg" />
+    <Content Include="Image\feedback.png" />
+    <Content Include="Image\jobs-01.jpg" />
+    <Content Include="Image\jobs-02.jpg" />
+    <Content Include="Image\jobs-03.jpg" />
+    <Content Include="Image\jobs-04.jpg" />
+    <Content Include="Image\logo.png" />
+    <Content Include="Image\logo2.png" />
+    <Content Include="Image\phone.png" />
+    <Content Include="Image\qr.png" />
+    <Content Include="Image\renren.png" />
+    <Content Include="Image\renren_login.png" />
+    <Content Include="Image\sina.png" />
+    <Content Include="Image\sina1.png" />
+    <Content Include="Image\sina2.png" />
+    <Content Include="Image\sina_login.png" />
+    <Content Include="Image\wechat1.png" />
+    <Content Include="Image\wechat2.png" />
+    <Content Include="Image\weixin.png" />
+    <Content Include="Image\weixin_login.png" />
+    <Content Include="Image\wx-popup.png" />
+    <Content Include="scripts\Baicizhan.js" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\jquery-3.2.0.min.js" />
+    <Content Include="scripts\npm.js" />
+    <Content Include="Views\addAdmin.aspx" />
+    <Content Include="Views\addWord.aspx" />
+    <Content Include="Views\addWordBag.aspx" />
+    <Content Include="Views\admin.aspx" />
+    <Content Include="Views\adminLog.aspx" />
+    <Content Include="Views\delWordBag.aspx" />
+    <Content Include="Views\editUser.aspx" />
+    <Content Include="Views\fix.aspx" />
+    <Content Include="Views\footer.ascx" />
+    <Content Include="Views\index.aspx" />
+    <Content Include="Views\join.aspx" />
+    <Content Include="Views\head.ascx" />
+    <Content Include="Views\myProf.aspx" />
+    <Content Include="Views\sign.aspx" />
+    <Content Include="Views\userProf.aspx" />
+    <Content Include="Views\word.aspx" />
+    <Content Include="Views\wordList.aspx" />
+    <Content Include="Views\wordTv.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\addAdmin.aspx.cs">
+      <DependentUpon>addAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\addAdmin.aspx.designer.cs">
+      <DependentUpon>addAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\addWord.aspx.cs">
+      <DependentUpon>addWord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\addWord.aspx.designer.cs">
+      <DependentUpon>addWord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\addWordBag.aspx.cs">
+      <DependentUpon>addWordBag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\addWordBag.aspx.designer.cs">
+      <DependentUpon>addWordBag.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\adminLog.aspx.cs">
+      <DependentUpon>adminLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\adminLog.aspx.designer.cs">
+      <DependentUpon>adminLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\delWordBag.aspx.cs">
+      <DependentUpon>delWordBag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\delWordBag.aspx.designer.cs">
+      <DependentUpon>delWordBag.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\editUser.aspx.cs">
+      <DependentUpon>editUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\editUser.aspx.designer.cs">
+      <DependentUpon>editUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\fix.aspx.cs">
+      <DependentUpon>fix.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\fix.aspx.designer.cs">
+      <DependentUpon>fix.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\footer.ascx.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\footer.ascx.designer.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\join.aspx.cs">
+      <DependentUpon>join.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\join.aspx.designer.cs">
+      <DependentUpon>join.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\head.ascx.cs">
+      <DependentUpon>head.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\head.ascx.designer.cs">
+      <DependentUpon>head.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\myProf.aspx.cs">
+      <DependentUpon>myProf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\myProf.aspx.designer.cs">
+      <DependentUpon>myProf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\sign.aspx.cs">
+      <DependentUpon>sign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\sign.aspx.designer.cs">
+      <DependentUpon>sign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\userProf.aspx.cs">
+      <DependentUpon>userProf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\userProf.aspx.designer.cs">
+      <DependentUpon>userProf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\word.aspx.cs">
+      <DependentUpon>word.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\word.aspx.designer.cs">
+      <DependentUpon>word.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\wordList.aspx.cs">
+      <DependentUpon>wordList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\wordList.aspx.designer.cs">
+      <DependentUpon>wordList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\wordTv.aspx.cs">
+      <DependentUpon>wordTv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\wordTv.aspx.designer.cs">
+      <DependentUpon>wordTv.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Image\User\" />
+    <Folder Include="Image\Word\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BaiCiZhanBLL.csproj">
+      <Project>{6ed92513-00d3-4858-a94a-2c9e6a7c03de}</Project>
+      <Name>BaiCiZhanBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\BaiCiZhanModel.csproj">
+      <Project>{bd19ef54-72f3-41d8-90f3-b32257c374d3}</Project>
+      <Name>BaiCiZhanModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SpeechLib">
+      <Guid>{C866CA3A-32F7-11D2-9602-00C04F8EE628}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>16764</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:16764/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

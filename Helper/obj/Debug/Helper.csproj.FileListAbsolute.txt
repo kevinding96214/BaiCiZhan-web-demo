@@ -1,0 +1,5 @@
+E:\ClassProgram\BCZWeb\Helper\bin\Debug\Helper.dll
+E:\ClassProgram\BCZWeb\Helper\bin\Debug\Helper.pdb
+E:\ClassProgram\BCZWeb\Helper\obj\Debug\Helper.dll
+E:\ClassProgram\BCZWeb\Helper\obj\Debug\Helper.pdb
+E:\ClassProgram\BCZWeb\Helper\obj\Debug\Helper.csprojResolveAssemblyReference.cache
