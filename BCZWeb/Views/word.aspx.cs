@@ -26,13 +26,13 @@ namespace BCZWeb.Views
             int id = 7;
             UserCollect uc = new UserCollect();
             BLL_UserCollect bu = new BLL_UserCollect();
-            bu.SelectUserCollect(id);
-            ucid.Text = uc.UC_ID.ToString();
-            cid.Text = uc.C_ID.ToString();
-            stime.Text = ((DateTime)uc.UC_StartDay).ToString();
-            etime.Text = ((DateTime)uc.US_EndDay).ToString();
-            sumday.Text = (uc.US_EndDay - uc.UC_StartDay).ToString();
-
+            List<UserCollect> luc = bu.SelectUserCollect(id);
+            ucid.Text = luc[0].UC_ID.ToString();
+            cid.Text = luc[0].C_ID.ToString();
+            stime.Text = luc[0].UC_StartDay.ToShortDateString();
+            etime.Text = luc[0].US_EndDay.ToShortDateString();
+            sumday.Text = luc[0].UC_ComDay.ToString();
+            surday.Text = Convert.ToDateTime(etime.Text).Subtract(DateTime.Now).Days.ToString();
         }
 
         //开始背单词

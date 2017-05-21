@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="userProf.aspx.cs" Inherits="BCZWeb.Views.userProf" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="userProf.aspx.cs" Inherits="BCZWeb.Views.userProf" EnableSessionState="True" %>
 
 <%@ Register Src="~/Views/head.ascx" TagPrefix="uc1" TagName="head" %>
 <%@ Register Src="~/Views/footer.ascx" TagPrefix="uc1" TagName="footer" %>
@@ -18,7 +18,7 @@
     <link href="../Content/bootstrap.min.css" rel="stylesheet" />
     <style>
         form{
-            margin-top:100px;
+            padding-top:100px;
             width:100%;
             font-size:18px;
         }
@@ -30,6 +30,9 @@
         }
         #save{
             width:200px;
+        }
+        #fileup{
+            border:1px solid #0094ff;
         }
     </style>
 </head>

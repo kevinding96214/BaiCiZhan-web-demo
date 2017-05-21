@@ -9,3 +9,14 @@ E:\ClassProgram\BCZWeb\BLL\bin\Debug\Helper.pdb
 E:\ClassProgram\BCZWeb\BLL\obj\Debug\BaiCiZhanBLL.csprojResolveAssemblyReference.cache
 E:\ClassProgram\BCZWeb\BLL\obj\Debug\BLL.dll
 E:\ClassProgram\BCZWeb\BLL\obj\Debug\BLL.pdb
+E:\ClassProgram\BCZWeb\BaiCiZhan-web-demo\BLL\bin\Debug\BLL.dll
+E:\ClassProgram\BCZWeb\BaiCiZhan-web-demo\BLL\bin\Debug\BLL.pdb
+E:\ClassProgram\BCZWeb\BaiCiZhan-web-demo\BLL\bin\Debug\DAL.dll
+E:\ClassProgram\BCZWeb\BaiCiZhan-web-demo\BLL\bin\Debug\Model.dll
+E:\ClassProgram\BCZWeb\BaiCiZhan-web-demo\BLL\bin\Debug\Helper.dll
+E:\ClassProgram\BCZWeb\BaiCiZhan-web-demo\BLL\bin\Debug\DAL.pdb
+E:\ClassProgram\BCZWeb\BaiCiZhan-web-demo\BLL\bin\Debug\Model.pdb
+E:\ClassProgram\BCZWeb\BaiCiZhan-web-demo\BLL\bin\Debug\Helper.pdb
+E:\ClassProgram\BCZWeb\BaiCiZhan-web-demo\BLL\obj\Debug\BaiCiZhanBLL.csprojResolveAssemblyReference.cache
+E:\ClassProgram\BCZWeb\BaiCiZhan-web-demo\BLL\obj\Debug\BLL.dll
+E:\ClassProgram\BCZWeb\BaiCiZhan-web-demo\BLL\obj\Debug\BLL.pdb

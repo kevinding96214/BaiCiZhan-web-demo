@@ -67,15 +67,6 @@ namespace BCZWeb.Views {
         protected global::System.Web.UI.WebControls.Label etime;
         
         /// <summary>
-        /// sumday 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label sumday;
-        
-        /// <summary>
         /// surday 控件。
         /// </summary>
         /// <remarks>
@@ -83,6 +74,15 @@ namespace BCZWeb.Views {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label surday;
+        
+        /// <summary>
+        /// sumday 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label sumday;
         
         /// <summary>
         /// start 控件。

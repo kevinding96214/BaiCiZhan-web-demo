@@ -54,8 +54,8 @@
         <p class="p">计划开始时间：<asp:Label ID="stime" runat="server" ForeColor="#ccc" Font-Size="XX-Large" /></p>
         <p class="p">计划结束时间：<asp:Label ID="etime" runat="server" ForeColor="#ccc" Font-Size="XX-Large" /></p>
         <p class="p">
-            计划剩余天数：<asp:Label ID="sumday" runat="server" ForeColor="YellowGreen" Font-Size="XX-Large" />
-            &nbsp;&nbsp;/&nbsp;&nbsp;<asp:Label ID="surday" runat="server" ForeColor="OrangeRed" Font-Size="XX-Large" />
+            计划剩余天数：<asp:Label ID="surday" runat="server" ForeColor="OrangeRed" Font-Size="XX-Large" /> &nbsp;&nbsp;/
+            &nbsp;&nbsp;<asp:Label ID="sumday" runat="server" ForeColor="YellowGreen" Font-Size="XX-Large" />
         </p>
         <p class="p">
             <asp:Button ID="start" runat="server" Text="开始背词" CssClass="btn btn-info" OnClick="start_Click" />

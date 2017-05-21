@@ -20,14 +20,17 @@ namespace BCZWeb.Views
             u.U_PASSWORD = index.Session["pass"].ToString();
             BLL_Users bu = new BLL_Users();
             bu.select(u);
-            photo.ImageUrl = u.U_IMG;
-            id.Text = u.U_ID.ToString();
-            name.Text = u.U_NAME;
-            pass.Text = u.U_PASSWORD;
-            email.Text = u.U_EMAIL;
-            date.Text = u.U_REGISTERTIME.ToString();
+            if (!Page.IsPostBack)
+            {
+                photo.ImageUrl = u.U_IMG;
+                id.Text = u.U_ID.ToString();
+                Session["id"] = id.Text;
+                name.Text = u.U_NAME;
+                pass.Text = u.U_PASSWORD;
+                email.Text = u.U_EMAIL;
+                date.Text = u.U_REGISTERTIME.ToString();
+            }
         }
-        
         protected void save_Click(object sender, EventArgs e)
         {
             try

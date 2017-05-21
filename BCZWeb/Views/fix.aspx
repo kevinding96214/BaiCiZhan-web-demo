@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="fix.aspx.cs" Inherits="BCZWeb.Views.fix" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="fix.aspx.cs" Inherits="BCZWeb.Views.fix" EnableSessionState="True"  %>
 <%@ Register Src="~/Views/head.ascx" TagPrefix="uc1" TagName="head" %>
 <%@ Register Src="~/Views/footer.ascx" TagPrefix="uc1" TagName="footer" %>
 
@@ -28,27 +28,39 @@
             text-align:center;
             background-color:rgba(255,255,255,.6);
         }
+        #edit{
+            margin-top:20px;
+        }
+        .book{
+            margin:10px;
+            background-color:#0094ff;
+            color:#fff;
+            font-size:18px;
+        }
+        #panel{
+            width:100%;
+        }
+        #add,#del{
+            width:150px;
+        }
     </style>
 </head>
 <body>
     <uc1:head runat="server" id="head" />
     <form id="form1" runat="server">
     <div id="collect">
-        <asp:GridView ID="list" runat="server" AutoGenerateColumns="false" CssClass="table table-hover" OnRowCommand="id_RowCommand" >
-            <Columns>
-                <asp:BoundField DataField="C_ID" HeaderText="单词书ID" />
-                <asp:BoundField DataField="C_NAME" HeaderText="单词书名称" />
-                <asp:BoundField DataField="C_RELEASEDATE" HeaderText="创建时间" />
-                <asp:BoundField DataField="C_VOCABULARY" HeaderText="单词总量" />
-                <asp:TemplateField HeaderText="计划操作">
-                    <ItemTemplate>
-                        <asp:TextBox ID="ew" runat="server" Text="每日单词量" Width="100" />
-                        <asp:Button ID="add" runat="server" Text="添加该计划" CssClass="btn btn-info" CommandArgument='<%# Eval("C_ID") %>' />
-                        <asp:Button ID="del" runat="server" Text="删除该计划" CssClass="btn btn-danger" CommandArgument='<%# Eval("C_ID") %>' />
-                    </ItemTemplate>
-                </asp:TemplateField>
-            </Columns>
-        </asp:GridView>
+            <asp:Panel ID="panel" runat="server" />
+        <div id="edit">
+            <p>单词书名：<asp:TextBox ID="bname" runat="server" ReadOnly="true" placeholder="单词书名称" /></p>
+                <p>单词书号：<asp:TextBox ID="bid" runat="server" ReadOnly="true" placeholder="单词书编号" /></p>
+                    <p>每日词量：<asp:TextBox ID="ew" runat="server" TextMode="Number" Text="15" placeholder="每日单词量" /></p>
+            <p>开始时间：<input type="date" id="sday" runat="server" /> </p>
+               <p> 结束时间：<input type="date" id="eday" runat="server" /> </p>
+            <p>
+                <asp:Button ID="add" runat="server" Text="添加计划" CssClass="btn btn-info" OnClick="add_Click" />
+                <asp:Button ID="del" runat="server" Text="删除计划" CssClass="btn btn-danger" OnClick="del_Click" />
+            </p>
+        </div>
     </div>
     </form>
     <uc1:footer runat="server" id="footer" />

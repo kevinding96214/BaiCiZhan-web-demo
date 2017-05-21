@@ -7,3 +7,12 @@ E:\ClassProgram\BCZWeb\DAL\bin\Debug\Model.pdb
 E:\ClassProgram\BCZWeb\DAL\obj\Debug\BaiCiZhanDAL.csprojResolveAssemblyReference.cache
 E:\ClassProgram\BCZWeb\DAL\obj\Debug\DAL.dll
 E:\ClassProgram\BCZWeb\DAL\obj\Debug\DAL.pdb
+E:\ClassProgram\BCZWeb\BaiCiZhan-web-demo\DAL\bin\Debug\DAL.dll
+E:\ClassProgram\BCZWeb\BaiCiZhan-web-demo\DAL\bin\Debug\DAL.pdb
+E:\ClassProgram\BCZWeb\BaiCiZhan-web-demo\DAL\bin\Debug\Helper.dll
+E:\ClassProgram\BCZWeb\BaiCiZhan-web-demo\DAL\bin\Debug\Model.dll
+E:\ClassProgram\BCZWeb\BaiCiZhan-web-demo\DAL\bin\Debug\Helper.pdb
+E:\ClassProgram\BCZWeb\BaiCiZhan-web-demo\DAL\bin\Debug\Model.pdb
+E:\ClassProgram\BCZWeb\BaiCiZhan-web-demo\DAL\obj\Debug\BaiCiZhanDAL.csprojResolveAssemblyReference.cache
+E:\ClassProgram\BCZWeb\BaiCiZhan-web-demo\DAL\obj\Debug\DAL.dll
+E:\ClassProgram\BCZWeb\BaiCiZhan-web-demo\DAL\obj\Debug\DAL.pdb

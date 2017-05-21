@@ -3,3 +3,8 @@ E:\ClassProgram\BCZWeb\Model\bin\Debug\Model.pdb
 E:\ClassProgram\BCZWeb\Model\obj\Debug\Model.dll
 E:\ClassProgram\BCZWeb\Model\obj\Debug\Model.pdb
 E:\ClassProgram\BCZWeb\Model\obj\Debug\BaiCiZhanModel.csprojResolveAssemblyReference.cache
+E:\ClassProgram\BCZWeb\BaiCiZhan-web-demo\Model\bin\Debug\Model.dll
+E:\ClassProgram\BCZWeb\BaiCiZhan-web-demo\Model\bin\Debug\Model.pdb
+E:\ClassProgram\BCZWeb\BaiCiZhan-web-demo\Model\obj\Debug\BaiCiZhanModel.csprojResolveAssemblyReference.cache
+E:\ClassProgram\BCZWeb\BaiCiZhan-web-demo\Model\obj\Debug\Model.dll
+E:\ClassProgram\BCZWeb\BaiCiZhan-web-demo\Model\obj\Debug\Model.pdb

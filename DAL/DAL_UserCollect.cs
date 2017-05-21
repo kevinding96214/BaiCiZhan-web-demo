@@ -14,7 +14,7 @@ namespace BaiCiZhanDAL
         #region 增删改
         public int AddUserCollect(UserCollect uc)
         {
-            string sql = "insert into UserCollect(U_ID,C_ID,UC_EveWord,UC_ComDay,US_EndDay,UC_isRead) values(@a1,@a2,@a3,@a4,@a5,@a6,@a7)";
+            string sql = "insert into UserCollect(U_ID,C_ID,UC_EveWord,UC_ComDay,UC_StartDay,US_EndDay) values(@a1,@a2,@a3,@a4,@a5,@a6)";
             SqlParameter[] par ={
                                    new SqlParameter ("@a1",uc.U_ID),
                                    new SqlParameter ("@a2",uc.C_ID ),
@@ -22,14 +22,13 @@ namespace BaiCiZhanDAL
                                    new SqlParameter ("@a4",uc.UC_ComDay),
                                    new SqlParameter ("@a5",uc.UC_StartDay),
                                    new SqlParameter ("@a6",uc.US_EndDay),
-                                   new SqlParameter ("@a7",uc.UC_isRead)
                                };
             return SQLHelper.ExecuteNonQuery(sql, System.Data.CommandType.Text, par);
         }
 
         public int DeleteUserCollect(int id)
         {
-            string sql = "delete from UserCollect where UC_ID=@a";
+            string sql = "delete from UserCollect where U_ID=@a";
             SqlParameter[] par ={
                                     new SqlParameter ("@a",id)
                                 };
