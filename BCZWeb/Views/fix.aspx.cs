@@ -49,10 +49,9 @@ namespace BCZWeb.Views
             uc.UC_StartDay = Convert.ToDateTime(sday.Value);
             uc.US_EndDay = Convert.ToDateTime(eday.Value);
             uc.UC_ComDay = Convert.ToDateTime(eday.Value).Subtract(Convert.ToDateTime(sday.Value)).Days;
-
             if (buc.AddUserCollect(uc) > 0)
             {
-                Response.Write("<script>alert('添加成功！');</script>");
+                Response.Write("<script>alert('添加成功！');window.location.href='word.aspx';</script>");
             }
             else
             {

@@ -193,6 +193,7 @@
     <Content Include="Views\head.ascx" />
     <Content Include="Views\myProf.aspx" />
     <Content Include="Views\sign.aspx" />
+    <Content Include="Views\start.aspx" />
     <Content Include="Views\userProf.aspx" />
     <Content Include="Views\word.aspx" />
     <Content Include="Views\wordList.aspx" />
@@ -298,6 +299,13 @@
     </Compile>
     <Compile Include="Views\sign.aspx.designer.cs">
       <DependentUpon>sign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\start.aspx.cs">
+      <DependentUpon>start.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\start.aspx.designer.cs">
+      <DependentUpon>start.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\userProf.aspx.cs">
       <DependentUpon>userProf.aspx</DependentUpon>

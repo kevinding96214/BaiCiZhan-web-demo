@@ -46,7 +46,7 @@
     <uc1:head runat="server" id="head" />
     <form id="form1" runat="server">
     <div id="collect">
-        <h2>当前计划：</h2>
+        <h2>当前计划：<asp:Label ID="current" runat="server" ForeColor="#0099ff" /></h2>
         <p class="p">
             计划ID：<asp:Label ID="ucid" runat="server" ForeColor="#ccc" Font-Size="XX-Large" />&nbsp;&nbsp;&nbsp;
             单词包ID：<asp:Label ID="cid" runat="server" ForeColor="#ccc" Font-Size="XX-Large" />

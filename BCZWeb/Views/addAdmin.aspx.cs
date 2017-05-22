@@ -47,7 +47,7 @@ namespace BCZWeb.Views
                 lt.L_TYPE = deltype.SelectedIndex;
                 if (del.DeleteLecturer(lt) > 0)
                 {
-                    Response.Write(@"<script>alert('删除成功！');</script>");
+                    Response.Write(@"<script>alert('删除成功！');location.reload();</script>");
                 }
                 else
                 {
@@ -72,7 +72,7 @@ namespace BCZWeb.Views
                 lt.L_VDATE = DateTime.Now;
                 if (add.AddLecturer(lt) > 0)
                 {
-                    Response.Write(@"<script>alert('添加成功！');</script>");
+                    Response.Write(@"<script>alert('添加成功！');location.reload();</script>");
                 }
                 else
                 {

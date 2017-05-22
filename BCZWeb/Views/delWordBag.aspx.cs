@@ -29,7 +29,7 @@ namespace BCZWeb.Views
                 del.DeleteCoures(cs);
                 if (del.DeleteCoures(cs) > 0)
                 {
-                    Response.Write(@"<script>alert('删除成功！');</script>");
+                    Response.Write(@"<script>alert('删除成功！');location.reload();</script>");
                 }
                 else
                 {

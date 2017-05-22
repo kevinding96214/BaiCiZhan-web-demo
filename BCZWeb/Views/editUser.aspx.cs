@@ -50,14 +50,16 @@ namespace BCZWeb.Views
         {
             try
             {
+                BLL_UserCollect buc = new BLL_UserCollect();
+                BLL_Users del = new BLL_Users();
                 Users us = new Users();
                 us.U_ID = Convert.ToInt32(uid.Text);
                 us.U_NAME = duname.Text;
-                BLL_Users del = new BLL_Users();
-                del.DeleteUsers(us);
+                buc.DeleteUserCollect(Convert.ToInt32(uid.Text));
                 if (del.DeleteUsers(us) > 0)
                 {
-                    Response.Write(@"<script>alert('删除成功！');</script>");
+                    Response.Write(@"<script>alert('删除成功！');location.reload();</script>");
+                    
                 }
             }
             catch
